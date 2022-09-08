@@ -14,12 +14,12 @@
 
 <body>
     <header class="header">
-        <div class="container">
+        <div class="container main-nav">
             <nav class="header-nav">
                 <a href="./index.html" class="logo"> <span>Web</span>Studio</a>
                 <ul class="header-list">
                     <li class="header-item"> <a href="./index.html">Студія</a> </li>
-                    <li class="header-item"> <a href="./portfolio.html"  class="current" rel="noopener noreferrer nofollow">Портфоліо</a>
+                    <li class="header-item"> <a href="./portfolio.html" class="current" rel="noopener noreferrer nofollow">Портфоліо</a>
                     </li>
                     <li class="header-item"> <a href="">Контакти</a> </li>
                 </ul>
@@ -31,16 +31,17 @@
         </div>
     </header>
     <main>
-        <section class="projects">
+        <section class="projects section">
+            <div class="container">
             <h1 class="visually-hidden">Каталог робіт</h1>
-            <ul>
+            <ul class="filters">
                 <li><button type="button" class="button">Усі</button></li>
                 <li><button type="button" class="button">Веб-сайти</button></li>
                 <li><button type="button" class="button">Додатки</button></li>
                 <li><button type="button" class="button">Дизайн</button></li>
                 <li><button type="button" class="button">Маркетинг</button></li>
             </ul>
-            <ul>
+            <ul class="portfolio">
                 <li class="project-item"><a href=""><img src="./images/pf1.jpg" alt="Розробники на екрані ноутбука" width=370 height=294>
                     <h2 class="project-title">Технокряк</h2>
                     <p class="project-description">Веб-сайт</p></a></li>
@@ -69,6 +70,7 @@
                     <h2 class="project-title">Growing Business</h2>
                     <p class="project-description">Додаток</p></a></li>
             </ul>
+            </div>
         </section>
 
     </main>
