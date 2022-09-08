@@ -204,7 +204,7 @@ h1,h2,h3,h4,h5,h6,p,ul{margin: 0;
                 justify-content: space-between;}
     .button{display: block;
         padding: 6px 22px;
-        margin-right: 8px;
+        margin-bottom: 34px;
         
         color: var(--title-text-color);
             background-color:var(--additional-background-color) ;
@@ -216,23 +216,31 @@ h1,h2,h3,h4,h5,h6,p,ul{margin: 0;
             text-align: center;
             letter-spacing: 0.03em;
             cursor: pointer;}
-    .button:last-child{margin-right: 0px;}    
+    .button-item:not(:last-child){margin-right: 8px;}    
     .button:hover, .button:focus{color: var(--accent-color);
         background-color: var(--accent-background-color);
         border: none;
         font-family: inherit;}
     .projects{background-color: var(--primary-background-color);}
-    .project-title{color: var(--title-text-color);
+    .project-title{padding: 20px 24px 4px 24px;
+
+                    color: var(--title-text-color);
                     font-weight: 700;
                     font-size: 18px;
                     line-height: 2;
                     letter-spacing: 0.06em;}
-    .project-description{color: var(--primary-text-color);
+    .project-description{padding:0px 24px 20px 24px ;
+
+                    color: var(--primary-text-color);
                     font-weight: 400;
                     font-size: 16px;
                     line-height: 1.88;
                     letter-spacing: 0.03em;}
     .project-item > a{text-decoration: none;}
+    .project-item{
+        border: solid 1px #EEEEEE;}
+    .project-item:not(:nth-child(n+7)){margin-bottom: 30px;}
+    
 
     /* шрифти:
     raleway 700
