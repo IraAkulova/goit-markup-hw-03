@@ -35,12 +35,11 @@ h1,h2,h3,h4,h5,h6,p,ul{margin: 0;
     .header-nav{display: flex;
             align-items: center;
             justify-content: space-between;}
-    .header{padding: 32px 0px;
-
-            background-color: var(--accent-color);
+    .header{background-color: var(--primary-background-color);
         border-bottom: solid 1px #ECECEC;}
     .logo{  display: inline-block;
             margin-right: 93px;
+            padding: 24px 0px 25px 0px;
 
             color: var(--logo-color);
             text-decoration: none;
@@ -70,16 +69,20 @@ h1,h2,h3,h4,h5,h6,p,ul{margin: 0;
     /* header-contacts */
     .contacts{  display: flex;}
     .contact:not(:last-child){margin-right: 50px;}
-    .contact > a{color: var(--primary-text-color);
+    .contact > a{display: block;
+                padding: 32px 0px;
+        
+                color: var(--primary-text-color);
                 text-decoration: none;}
     .contact > a:hover, .contact > a:focus{color: var(--accent-background-color);}
 
     /* hero */
-    .hero{background-color: var(--hero-background-color);
+    .hero{padding: 200px 0px;
+        
+        background-color: var(--hero-background-color);
         text-align: center;}
     .hero-header{margin: 0px auto 30px auto;
-                width: 696px;
-
+                max-width: 696px;
 
                 color: var(--primary-background-color);
                 font-weight: 900;
@@ -118,9 +121,10 @@ h1,h2,h3,h4,h5,h6,p,ul{margin: 0;
                     text-align: center;
                     letter-spacing: 0.03em;}
     .features-list{display: flex;
-                    margin-bottom: 0px;}
+                    margin-bottom: 0px;
+                    gap: 30px;}
     .features-item{width: 270px;}
-    .features-item:not(:last-child){margin-right: 30px;}
+    /* .features-item:not(:last-child){margin-right: 30px;} */
     .features{margin-bottom: 10px;
         
                     color: var(--title-text-color);
@@ -143,12 +147,10 @@ h1,h2,h3,h4,h5,h6,p,ul{margin: 0;
                     clip: rect(0 0 0 0);
                     clip-path: inset(50%);
                     margin: -1px;}
-    .our-work{display: flex;
-            justify-content: space-between;}
+    .our-work, .our-team{display: flex;
+                        gap: 30px;}
 
-    .our-team{display: flex;
-            justify-content: space-between;}
-    .name{padding: 30px 0px 10px 0px;
+    .name{margin-bottom: 10px;
         
                     color: var(--title-text-color);
                     font-weight: 500;
@@ -156,9 +158,8 @@ h1,h2,h3,h4,h5,h6,p,ul{margin: 0;
                     line-height: 1.19;       
                     text-align: center;
                     letter-spacing: 0.03em;}
-    .card{padding-bottom: 30px;
-        
-        background-color: var(--primary-background-color);}
+    .card{background-color: var(--primary-background-color);}
+    .card-description{padding: 30px 0px;}
     .team{background-color: var(--additional-background-color);
                     font-weight: 400;
                     font-size: 16px;
@@ -167,12 +168,20 @@ h1,h2,h3,h4,h5,h6,p,ul{margin: 0;
                     letter-spacing: 0.03em;}
 
     /* footer */
-    .footer{padding: 60px 0px;}
-    .footer .logo{padding-bottom: 20px;
-        
-                    color: var(--accent-color);}
+    .footer{padding: 60px;}
+    .footer-logo{display: inline-block;
+                margin-bottom: 20px;
+    
+                text-decoration: none;
+                font-family: 'Raleway', sans-serif;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 26px;
+                line-height: 1.19;
+                letter-spacing: 0.03em;
+                color: var(--accent-color);}
     .footer-address > a{display: inline-block;
-                        padding-bottom: 9px;
+                        margin-bottom: 9px;
         
                         color: var(--accent-color);
                         text-decoration: none;
@@ -181,7 +190,7 @@ h1,h2,h3,h4,h5,h6,p,ul{margin: 0;
                         font-size: 14px;
                         line-height: 1.71;
                         letter-spacing: 0.03em;}
-    .footer-e-mail{padding-bottom: 9px;}
+    .footer-e-mail{margin-bottom: 9px;}
     .footer-e-mail > a, .footer-phone-number > a{color: rgba(255, 255, 255, 0.6);
                                         text-decoration: none;
                                         font-style: normal;
@@ -198,13 +207,14 @@ h1,h2,h3,h4,h5,h6,p,ul{margin: 0;
     
     /* section-projects*/
     .filters{display: flex;
-                justify-content: center;}
+            justify-content: center;
+            margin-bottom: 50px;
+            gap: 8px;}
     .portfolio{display: flex;
                 flex-wrap: wrap;
                 justify-content: space-between;}
     .button{display: block;
         padding: 6px 22px;
-        margin-bottom: 34px;
         
         color: var(--title-text-color);
             background-color:var(--additional-background-color) ;
@@ -216,26 +226,25 @@ h1,h2,h3,h4,h5,h6,p,ul{margin: 0;
             text-align: center;
             letter-spacing: 0.03em;
             cursor: pointer;}
-    .button-item:not(:last-child){margin-right: 8px;}    
+    /* .button-item:not(:last-child){margin-right: 8px;}     */
     .button:hover, .button:focus{color: var(--accent-color);
         background-color: var(--accent-background-color);
         border: none;
         font-family: inherit;}
     .projects{background-color: var(--primary-background-color);}
-    .project-title{padding: 20px 24px 4px 24px;
+    .project-title{margin-bottom: 4px;
 
                     color: var(--title-text-color);
                     font-weight: 700;
                     font-size: 18px;
                     line-height: 2;
                     letter-spacing: 0.06em;}
-    .project-description{padding:0px 24px 20px 24px ;
-
-                    color: var(--primary-text-color);
+    .project-description{color: var(--primary-text-color);
                     font-weight: 400;
                     font-size: 16px;
                     line-height: 1.88;
                     letter-spacing: 0.03em;}
+    .project-card{padding: 20px 24px;}
     .project-item > a{text-decoration: none;}
     .project-item{
         border: solid 1px #EEEEEE;}
